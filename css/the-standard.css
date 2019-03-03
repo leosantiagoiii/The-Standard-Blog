@@ -1,0 +1,439 @@
+*{
+	padding: 0;
+	margin: 0; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: heading;
+	src:url('../fonts/heading/Heading.ttf');
+}
+@font-face{
+	font-family: open-sans-bold;
+	src:url('../fonts/open-sans/OpenSans-Bold.ttf');
+}
+@font-face{
+	font-family: open-sans-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-BoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-extra-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-italic;
+	src:url('../fonts/open-sans/OpenSans-Italic.ttf');
+}
+@font-face{
+	font-family: open-sans;
+	src:url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face{
+	font-family: primetime;
+	src:url('../fonts/primetime/Primetime.ttf');
+}
+@font-face{
+	font-family: pt-sans;
+	src:url('../fonts/pt-sans/PTC55F.ttf');
+}
+@font-face{
+	font-family: pt-sans-slim-bold;
+	src:url('../fonts/pt-sans/PTN77F.ttf');
+}
+@font-face{
+	font-family: nouvelle;
+	src:url('../fonts/nouvelle_vague_final.ttf');
+}
+.heading{
+    position: relative;
+    text-align: center;
+    color: black;
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+  	border-bottom:0.4px solid black;
+  	z-index: 10;
+}
+.header-bg{
+	background-color: white;
+	width: 100%;
+	height: 75px;
+}
+.logo{
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    opacity: 0.87;
+    font-family: primetime;
+    font-size: 30px;
+    width: 30%;
+    -moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.logo:hover{
+	opacity: 1;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.nav{
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+}
+.nav-links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li{
+	margin-left: 10px;
+    display: inline;
+}
+.nav-links a{
+	text-decoration:none;
+	color: #373736;
+	font-family: pt-sans-slim-bold;
+	font-size: 17px;
+}
+.nav-links a:hover{
+	color: #1e9583;
+	border-bottom: 1px solid #1e9583;
+	padding-bottom: 0px;
+	display: inline;
+}
+.divider{
+	font-size: 20px;
+	font-weight: 1%;
+}
+.content{
+	background-color: #f9f9f9;
+	padding-bottom: 25px;
+}
+.main-updates{
+	padding: 10px;
+	text-align: center;
+}
+.main-updates:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-updates .column{
+	float: left;
+	padding: 25px;
+}
+.main-updates .left, .main-updates .middle{
+	width: 25%;
+}
+.main-updates .right{
+	width: 50%;
+}
+.update-content h1{
+	font-family: heading;
+	font-size: 35px;
+}
+.update-content a{
+	color: #373736;
+	font-style: none;
+	text-decoration:none;
+}
+.update-content a:hover{
+	color: #1e9583;
+}
+.main-updates p{
+	font-family: open-sans;
+	font-size: 13px;
+}
+.three-updates{
+	background-color: white;
+	width: 100%;
+	height: 330px;
+}
+.img-container{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 21vh;
+}
+.img-container-three{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.img-container img{
+	max-width: 100%;
+	width: 100%;
+	-moz-transition: all 0.15s;
+	-webkit-transition: all 0.15s;
+	transition: all 0.15s;
+}
+.img-container:hover img{
+		-moz-filter: brightness(65%);
+		-webkit-filter: brightness(65%);
+		filter: brightness(65%);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.img-container-three{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.img-container-three img{
+	-moz-filter: brightness(55%);
+	-webkit-filter: brightness(55%);
+	filter: brightness(55%);
+	max-width: 100%;
+	width: 100%;
+	-moz-transition: all 0.15s;
+	-webkit-transition: all 0.15s;
+	transition: all 0.15s;
+}
+.img-container-three:hover img{
+	-moz-filter: brightness(36%);
+	-webkit-filter: brightness(36%);
+	filter: brightness(36%);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.update-content{
+	margin-top: 30px;
+}
+.update-content-three{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.update-content-three a{
+	color: white;
+	letter-spacing: -2px;
+	font-family: nouvelle;
+	text-decoration: none;
+	font-size: 40px;
+	line-height: 10px;
+}
+
+.trending-section{
+	margin: 0 35px 0 30%;
+	background-color: white;
+	padding: 0;
+}
+.trending-section-title{
+	font-family: primetime;
+	text-transform: uppercase;
+	font-weight:lighter;
+	letter-spacing: -1px;
+	color: #525252;
+	background-color: #fcfbfb;
+	font-size: 22px;
+	padding: 20px;
+}
+.trending-section img{
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+		-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.trending-section img:hover{
+	filter: brightness(120%);
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	box-shadow: 5px 5px gray;
+}
+.trending-col-img{
+	float: left;
+	width: 30%;
+}
+.trending-col-content{
+	float: left;
+	width: 70%;
+}
+.trending-row{
+	width: 100%;
+	height: 180px;
+	padding-left: 20px;
+}
+.trending-row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.trending-article{
+	padding: 30px 70px 30px 30px;
+}
+.trending-article h1, .trending-row a{
+	font-family: pt-sans-slim-bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #373736;
+}
+.trending-row a:hover{
+	color:#1e9583;
+}
+.trending-article time, .trending-article p{
+	font-family: open-sans;
+	font-style: italic;
+	font-size: 12px;
+}
+.newsletter-section{
+	text-align: center;
+	background-color: #373736;
+	padding: 100px 0;
+	width: 100%;
+}
+.newsletter-section h1{
+	color: white;
+	font-family: nouvelle;
+	font-size: 45px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+.newsletter-section p{
+	color: #1e9583;
+	text-transform: uppercase;
+	font-family: pt-sans;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: bolder;
+	margin:8px 0 17px 0;
+}
+.email-container{
+	padding: 8px 10px;
+	width:30%;
+	color: white;
+	font-family: pt-sans;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	font-size: 11px;
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: transparent;
+}
+.subscribe{
+	padding: 8px 10px;
+	width: 10%;
+	color: white;
+	font-family: pt-sans;
+	font-size: 11px;
+	background-color: transparent;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+.subscribe:hover{
+	border-color: #1e9583;
+	color: #1e9583;
+}
+.my-feature{
+	padding: 150px 0px;
+	text-align: center;
+	background-color: #f9f9f9;
+}
+.my-feature:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+.my-feature a{
+	color: #373736;
+	text-decoration: none;
+}
+.my-feature a:hover{
+	color: #1e9583;
+}
+.my-feature h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+.feature-head{
+	font-family: heading;
+	font-weight: lighter;
+	font-size:45px;
+	margin: 0px 0px 0px 0;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+.feature-title{
+	font-family: pt-sans-slim-bold;
+	letter-spacing: -1.9px;
+	font-size: 27px;
+}
+.my-feature-article{
+	width: 21%; 
+	padding: 0px;
+	margin: 10px 10px;
+	background-color: white;
+	height: 18em;
+	display: inline-block;
+	overflow: hidden;
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	transition: all 0.1s;
+}
+.my-feature-article:hover{
+	filter: brightness(100%);
+	transform: scale(1.07);
+	box-shadow: 3px 3px 3px gray;
+}
+.my-feature-article p{
+	font-family: open-sans;
+	font-size: 11.7px;
+	letter-spacing: 0px;
+	padding:0px 10px;
+}
+.my-feature-article img{
+	object-fit: cover;
+	padding: 0px 0px;
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.my-feature-article img:hover{
+	-moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+	filter: brightness(85%);
+}
+
+
+footer{
+	background-color: #373736;
+	color: black;
+	padding: 40px 40px;
+}
+.logo-footer{
+	background-image: url('../images/header.png');
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-position: center;
+	width: 30%;
+	margin: 0 auto;
+	padding: 30px 0px;
+		-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.logo-footer:hover{
+	border-color: white;
+	box-shadow: 10px 10px gray;
+}
+.footer-down{
+	color: white;
+	padding: 5px 15px;
+	font-size: 13px;
+	font-family: open-sans;
+	background-color: #1e9583;
+	text-align: right;
+}

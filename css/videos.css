@@ -1,0 +1,79 @@
+*{
+	padding: 0;
+	margin: 0; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: heading;
+	src:url('../fonts/heading/Heading.ttf');
+}
+@font-face{
+	font-family: open-sans-bold;
+	src:url('../fonts/open-sans/OpenSans-Bold.ttf');
+}
+@font-face{
+	font-family: open-sans-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-BoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-extra-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-italic;
+	src:url('../fonts/open-sans/OpenSans-Italic.ttf');
+}
+@font-face{
+	font-family: open-sans;
+	src:url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face{
+	font-family: primetime;
+	src:url('../fonts/primetime/Primetime.ttf');
+}
+@font-face{
+	font-family: pt-sans;
+	src:url('../fonts/pt-sans/PTC55F.ttf');
+}
+@font-face{
+	font-family: pt-sans-slim-bold;
+	src:url('../fonts/pt-sans/PTN77F.ttf');
+}
+@font-face{
+	font-family: nouvelle;
+	src:url('../fonts/nouvelle_vague_final.ttf');
+}
+.videos-section{
+	text-align: center;
+	background-color: #fcfbfb;
+}
+h1{
+	font-family: primetime;
+	text-transform: uppercase;
+	font-weight:lighter;
+	letter-spacing: -1px;
+	color: #525252;
+	text-align: center;
+	background-color: #fcfbfb;
+	font-size: 30px;
+	padding-top: 30px;
+	margin-bottom: 30px; 
+}
+h2{
+	font-family: pt-sans-slim-bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #373736;
+	font-size: 27px;
+}
+h2:hover{
+	color:#1e9583;
+}
+.video-content{
+	padding-bottom: 30px;
+}
+.video-content video{
+	width: 60%;
+}

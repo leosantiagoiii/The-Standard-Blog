@@ -1,0 +1,107 @@
+*{
+	padding: 0;
+	margin: 0; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: heading;
+	src:url('../fonts/heading/Heading.ttf');
+}
+@font-face{
+	font-family: open-sans-bold;
+	src:url('../fonts/open-sans/OpenSans-Bold.ttf');
+}
+@font-face{
+	font-family: open-sans-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-BoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-extra-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-italic;
+	src:url('../fonts/open-sans/OpenSans-Italic.ttf');
+}
+@font-face{
+	font-family: open-sans;
+	src:url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face{
+	font-family: primetime;
+	src:url('../fonts/primetime/Primetime.ttf');
+}
+@font-face{
+	font-family: pt-sans;
+	src:url('../fonts/pt-sans/PTC55F.ttf');
+}
+@font-face{
+	font-family: pt-sans-slim-bold;
+	src:url('../fonts/pt-sans/PTN77F.ttf');
+}
+@font-face{
+	font-family: nouvelle;
+	src:url('../fonts/nouvelle_vague_final.ttf');
+}
+.content{
+	 background-color: #fcfcfc;
+	 padding-top: 30px;
+}
+.title{
+	font-family: primetime;
+	text-transform: uppercase;
+	font-weight:lighter;
+	letter-spacing: -1px;
+	color: #525252;
+	text-align: center;
+	background-color: #fcfbfb;
+	font-size: 30px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column h2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-family: pt-sans-slim-bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px;
+}
+.img-cols{
+	margin: 30px;
+	position: relative;
+	overflow: hidden;
+	height: 350px;
+}
+.img-cols img{
+	max-width: 100%;
+	width: 100%;
+	-moz-transition: all 0.15s;
+	-webkit-transition: all 0.15s;
+	transition: all 0.15s;
+	-moz-filter: brightness(70%);
+	-webkit-filter: brightness(70%);
+	filter: brightness(70%);
+}
+.img-cols img:hover{
+	-moz-filter: brightness(54%);
+	-webkit-filter: brightness(54%);
+	filter: brightness(54%);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}

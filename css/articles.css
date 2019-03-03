@@ -1,0 +1,92 @@
+*{
+	padding: 0;
+	margin: 0; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face{
+	font-family: heading;
+	src:url('../fonts/heading/Heading.ttf');
+}
+@font-face{
+	font-family: open-sans-bold;
+	src:url('../fonts/open-sans/OpenSans-Bold.ttf');
+}
+@font-face{
+	font-family: open-sans-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-BoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-extra-bold-italic;
+	src:url('../fonts/open-sans/OpenSans-ExtraBoldItalic.ttf');
+}
+@font-face{
+	font-family: open-sans-italic;
+	src:url('../fonts/open-sans/OpenSans-Italic.ttf');
+}
+@font-face{
+	font-family: open-sans;
+	src:url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face{
+	font-family: primetime;
+	src:url('../fonts/primetime/Primetime.ttf');
+}
+@font-face{
+	font-family: pt-sans;
+	src:url('../fonts/pt-sans/PTC55F.ttf');
+}
+@font-face{
+	font-family: pt-sans-slim-bold;
+	src:url('../fonts/pt-sans/PTN77F.ttf');
+}
+@font-face{
+	font-family: nouvelle;
+	src:url('../fonts/nouvelle_vague_final.ttf');
+}
+.article-content-section{
+	background-color: #f9f9f9;
+	padding: 30px 0px;
+	color: #373736;
+}
+.article-itself{
+	 width: 85%; 
+	 margin: 0px 30px;
+}
+.article-header-img{
+	width: 100%;
+	height: 555px;
+	object-fit: cover;
+	object-position: center;
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-bottom: 10px;
+}
+.article-itself h1{
+	font-family: pt-sans;
+	font-size: 38px;text-align: center;
+}
+.article-itself h2{
+	font-family: pt-sans;
+	font-size: 22px;
+	text-align: center;
+	line-height: 28px;
+	margin: 25px 0px;
+}
+.article-itself q{
+	font-style: italic;
+}
+.article-itself time{
+	font-family: open-sans;
+	font-size: 15px;
+}
+.article-itself p{
+	padding-right: 30px;
+	font-family: open-sans;
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 35px;
+	letter-spacing: -0.7;
+}
